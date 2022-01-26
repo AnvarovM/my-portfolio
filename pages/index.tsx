@@ -1,6 +1,7 @@
-import Head from 'next/head';
+import Head from 'next/head'
 
-import Navbar from '../components/navbar/index'
+// components
+import Navbar from '@/layout/navbar/index'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      <h1 className='text-blue-500'>salem</h1>
     </div>
   )
 }
