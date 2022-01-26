@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <h1 className='text-blue-500'>salem</h1>
+      <h1 className='container text-blue-500'>salom</h1>
     </div>
   )
 }
