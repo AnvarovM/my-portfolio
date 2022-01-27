@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +9,28 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+hover:-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9d9faa;
+  border-radius: 30px;
+}
+
+
+
+@layer base {
+  :root {
+    --light-bg: #ffffff;
+    --light-text-main: #18191c;
+    --light-text-muted: #3d4c58;
+    --dark-bg: #0f0f13;
+    --dark-text-main: #fff;
+    --dark-text-muted: #efefef;
+  }
+}

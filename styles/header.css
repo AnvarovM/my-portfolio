@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .animation__div {
+        @apply w-24 h-24 group-hover:w-20 group-hover:h-20 transition-all duration-300 flex items-center justify-center rounded-full  opacity-90 cursor-pointer
+    }
+}

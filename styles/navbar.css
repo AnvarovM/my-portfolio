@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navbar {
+        @apply fixed top-0 left-0 right-0 flex justify-between items-center px-4 md:px-8 transition-all duration-300 border-b dark:border-transparent z-50
+    }
+
+    .nav__link {
+        @apply cursor-pointer text-lg text-my-lightText dark:text-my-darkText font-medium pt-6 pb-4 border-b-transparent hover:text-my-lightTextMuted dark:hover:text-my-darkTextMuted transition-all duration-300
+    }
+
+    .nav__link.active {
+        @apply border-b-2 border-black dark:border-b-white
+    }
+
+    .nav__icon {
+        @apply text-xl md:text-2xl hover:text-[#03a045] cursor-pointer transition-all duration-300
+    }
+}

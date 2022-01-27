@@ -1,12 +1,15 @@
 import Head from 'next/head';
+import { ThemeProvider } from 'next-themes';
 
+// style
 import '../styles/globals.css';
+import '../styles/home.css'
 import 'tailwindcss/tailwind.css'
 import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div>
+    <div className='bg-my-lightBg dark:bg-my-darkBg'>
       <Head>
         {/* Monda */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +30,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Component {...pageProps} />
+      <ThemeProvider enableSystem={true} attribute='class'>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </div>
   )
 }

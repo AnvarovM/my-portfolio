@@ -1,53 +1,32 @@
-export const navData = [
-    {
-        id: 1,
-        title: "Home",
-        path: '/',
-        class: "nav__home"
-    },
-    {
-        id: 1,
-        title: "Portfolio",
-        path: '/portfolio',
-        class: "nav__portfolio"
-    },
-    {
-        id: 1,
-        title: "About",
-        path: '/about',
-        class: "nav__about"
-    },
-    {
-        id: 1,
-        title: "Contact",
-        path: '/',
-        class: "nav__contact",
-        contact_data: [
-            {
-                id: 1,
-                github: "Gut Hub",
-                github_img: "",
-            },
-            {
-                id: 2,
-                gmail: "Gmail",
-                gmail_img: "",
-            },
-            {
-                id: 3,
-                telegram: "Telegram",
-                telegram_img: "",
-            },
-            {
-                id: 4,
-                linkedin: "Linkedin",
-                linkedin_img: "",
-            },
-            {
-                id: 5,
-                instagram: "Instagram",
-                instagram_img: "",
-            },
-        ]
-    },
-] 
+export const contact_data = [
+  {
+    id: 1,
+    title: 'Git Hub',
+    github_img: '',
+    path: 'https://github.com/AnvarovM'
+  },
+  {
+    id: 2,
+    title: 'Gmail',
+    gmail_img: 'anvarovmuxammadxuja2001@gmail.com',
+    path: ''
+  },
+  {
+    id: 3,
+    title: 'Telegram',
+    telegram_img: '',
+    path: 'https://t.me/anvarov2027'
+  },
+  {
+    id: 4,
+    title: 'Linkedin',
+    linkedin_img: '',
+    path: 'https://www.linkedin.com/in/mukhammad-anvarov-99649b22a/'
+  },
+  {
+    id: 5,
+    title: 'Instagram',
+    instagram_img: '',
+    path: 'https://www.instagram.com/akzmsh/'
+  },
+]
